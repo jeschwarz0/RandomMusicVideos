@@ -24,7 +24,7 @@
 * `rmv-playlist` - Load a playlist containing up to 50 videos in firefox
 ## Notes 
 * There may be a way to watch more videos at a time but it is up to you to figure it out
-* This can be run on linux 
+* This can be run on linux with a `.ytlinks` path modification 
 ## Acknowledgements
 Creator: [Jesse Schwarz](mailto:jesseschwarz0@gmail.com)
 ## License

@@ -1,3 +1,3 @@
 alias 	rmv='firefox $(shuf ~/AppData/Roaming/RandomMusicVideos/.ytlinks | head -n 1) &>/dev/null &' \
-	    rmv-update="sed -n '/Music Videos/,/\/DL/p' bookmarks.html | grep -Eo 'HREF=\"http[s]?\:\/\/www.youtube.com\/watch[^\"]*' | sed 's/HREF=\"//g' > ~/AppData/Roaming/RandomMusicVideos/.ytlinks" \
+	    rmv-update="[ ! -d ~/AppData/Roaming/RandomMusicVideos/ ] && mkdir ~/AppData/Roaming/RandomMusicVideos/;sed -n '/Music Videos/,/\/DL/p' bookmarks.html | grep -Eo 'HREF=\"http[s]?\:\/\/www.youtube.com\/watch[^\"]*' | sed 's/HREF=\"//g' > ~/AppData/Roaming/RandomMusicVideos/.ytlinks" \
 	    rmv-playlist="firefox https://www.youtube.com/watch_videos?video_ids=$(shuf ~/AppData/Roaming/RandomMusicVideos/.ytlinks | head -n 50 | grep -Eo 'v=[^\&]*' | sed 's/v=//g' | tr -s '\n' ',') &>/dev/null &";

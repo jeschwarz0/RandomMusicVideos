@@ -14,9 +14,8 @@
 3. Run Firefox and bookmark your videos in a folder called "Music Videos"
 4. Export your bookmarks to html and save the file at your user home directory (~)
 5. Copy the contents of [bash-aliases.bash](/bash-aliases.bash) to .bash_profile in your home directory (~)
-6. Create directory `%AppData%/RandomMusicVideos/` or in git bash run `mkdir ~/AppData/Roaming/RandomMusicVideos`
-7. Create or update the list with `rmv-update` in git bash after sourcing `.bash_profile`
-8. (Optional) Copy function in [.bash_profile](/.bash_profile) to your `.bash_profile` to see what videos are no longer available(rmv-check)
+6. Create or update the list with `rmv-update` in git bash after sourcing `.bash_profile`
+7. (Optional) Copy function in [.bash_profile](/.bash_profile) to your `.bash_profile` to see what videos are no longer available(rmv-check)
 ----------
 ## Usage (git bash)
 ### Firefox
